@@ -1,38 +1,165 @@
-.App {
-  text-align: center;
+*{
+padding: 0;
+margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Appdiv {
   display: flex;
   flex-direction: column;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #a8afbd;
+  height: 10vh;
+}
+.cart{
+  display: flex;
+  flex-direction: row;
+}
+.cart-page{
+  width: 2em;
+  height: 1.3em;
+}
+.cart-item-number{
+  position: relative;
+  left: -12px;
+  top: -13px;
+  height: 20px;
+  width: 18px;
+  background-color: red;
+  border-radius: 3px;
   color: white;
+  font-size: 13px;
+
+}
+.content {
+  height: calc(100vh - 170px); /* Adjust the height as needed */
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: repeat(4,200px);
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  gap: 30px;
+  padding-bottom: 100px;
+  
+}
+.cart-content{
+  height: calc(100vh - 170px); /* Adjust the height as needed */
+  overflow-y: scroll;
+  display: flex;
+flex-direction: column;
+ align-items: center;
+  
+  
+}
+.empty{
+  text-align: center;
+}
+.null{
+  width: 10em;
+  height: 5.3em;
+}
+.footer{
+  background-color: #a8afbd;
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  color: white; /* Set your preferred text color */
+  text-align: center;
+  padding: 10px; /* Adjust the padding as needed */
+
+}
+.image{
+width: 200px;
+height: 200px;
+}
+ .product{ 
+  background-color: rgb(185, 243, 243);
+} 
+.product-company{
+  font-size: 25px;
+  margin-left: 5px;
+  padding-top: 5px;
+}
+.product-type{
+  font-size: 15px;
+  margin-left: 5px;
+  padding-top: 3px;
+}
+.priceandcount{
+  display: flex;
+ justify-content: space-between;
+ margin-left: 5px;
+ padding-top: 4px; 
+}
+.add-count{
+  display: flex;
+ 
+}
+.addminus{
+  width: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: baseline;
 }
 
-.App-link {
-  color: #61dafb;
+.cartpageheading{
+  position: absolute;
+  left: 33%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cartproduct{
+  display: flex;
+  height: 200px;
+  width: 400px;
+  background-color: rgb(185, 243, 243);
+margin: 10px;
+}
+.cartimage{
+  width: 200px;
+height: 200px;
+}
+.cartproduct-company{
+  font-size: 25px;
+  margin-left: 5px;
+  padding-top: 5px;
+}
+.cartproduct-type{
+  font-size: 15px;
+  margin-left: 5px;
+  padding-top: 3px;
+}
+.cartpriceandcount{
+  display: flex;
+ justify-content: space-between;
+ margin-left: 5px;
+ padding-top: 4px; 
+}
+.cartadd-count{
+  display: flex;
+ 
+}
+.cartaddminus{
+  width: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: baseline;
+}
+.close{
+margin-bottom: 10px;margin-left: 172px;
+margin-top: 10px;
+}
+.totalprice{
+  margin-bottom: 200px;
+}
+.cartproductoneprice{
+  margin-top: 20px;
 }

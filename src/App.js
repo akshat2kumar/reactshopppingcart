@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
+import useCart from './useCart';
+import "./App.css";
+import MainRouter from "./reactrouter/MainRouter";
 function App() {
+  const{array,setArray,productplus,productminus,filteredProducts,sumOfCount,itemremove,sumOftotalproduct}=useCart();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <MainRouter array={array} setArray={setArray} productplus={productplus} productminus={productminus}filteredProducts={filteredProducts} sumOfCount={sumOfCount} itemremove={itemremove} sumOftotalproduct={sumOftotalproduct}/>
   );
+
 }
 
 export default App;
